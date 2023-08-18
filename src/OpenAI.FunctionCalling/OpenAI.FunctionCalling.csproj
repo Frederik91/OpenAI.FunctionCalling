@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>11</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Version>1.0.0</Version>
+		<PackageId>OpenAI.FunctionCalling</PackageId>
+		<Authors>Your Name or Organization</Authors>
+		<Company>Your Company Name</Company>
+		<Product>OpenAI.FunctionCalling</Product>
+		<Description>An easy-to-use C# library wrapping the OpenAI function call API for method invocation.</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/your-github-username/your-repository-name</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/your-github-username/your-repository-name.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>OpenAI API FunctionCalling</PackageTags>
+		<PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+		<PackageIcon>path-to-your-logo.png</PackageIcon>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="OpenAI.FunctionCalling.Tests" />
+		<InternalsVisibleTo Include="DynamicAssemblyProxyGen2" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.6" />
+		<PackageReference Include="OpenWeatherAPI" Version="1.0.2" />
+	</ItemGroup>
+
+</Project>
